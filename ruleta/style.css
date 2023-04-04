@@ -15,6 +15,7 @@ body {
 
 .contenedor-ruleta {
   transform: rotate(180deg);
+  zoom: 1.5;
 }
 
 .contenedor-ruleta::before {
