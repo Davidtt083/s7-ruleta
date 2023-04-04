@@ -19,18 +19,17 @@ body {
 
 .contenedor-ruleta::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   position: absolute;
   z-index: 99999;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -32%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
   pointer-events: none;
   color: black;
-  border-bottom: solid;
-  border-right: solid;
+
 }
 
 .ruleta {
@@ -47,6 +46,7 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  
 }
 
 .ruleta::before {
@@ -61,7 +61,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  border: solid;
+  z-index: 99999;
 }
 
 .opcion {
