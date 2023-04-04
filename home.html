@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Page Transitions</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="overflow-x:hidden; overflow-y:hidden">
+
+  <div class="bgcontenedor">
+    <div class="gris"></div>
+    <div class="negro" id="negro"></div>
+  </div>
+  
+    
+  </div>
+  <div class="contep">
+
+    <div class="princ hide btn2" onclick="mostrarp(2)" id="btn2">
+      <div class="logo1 "><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ hide btn3" onclick="mostrarp(3)" id="btn3">
+      <div class="logo1" id="logo2"><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ hide btn4" onclick="mostrarp(4)" id="btn4">
+      <div class="logo1" id="logo3"><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ hide btn5" onclick="mostrarp(5)" id="btn5">
+      <div class="logo1" id="logo4"><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ hide btn6" onclick="mostrarp(6)" id="btn6">
+      <div class="logo1" id="logo5"><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ hide btn7" onclick="mostrarp(7)" id="btn7">
+      <div class="logo1" id="logo5"><img src="images\plus.png" alt=""></div>
+    </div>
+    <div class="botonmas" id="bm1" onclick="mostrarsuborg(2)"></div>
+    <div class="botonmas" id="bm2" onclick="mostrarsuborg(3)"></div>
+    <div class="botonmas" id="bm3" onclick="mostrarsuborg(4)"></div>
+    <div class="botonmas" id="bm4" onclick="mostrarsuborg(5)"></div>
+  </div>
+
+
+
+  <div class="texto1 hide align-items-center" id="text1">
+    <div class="d-flex align-content-center flex-wrap">
+      <div class="cerrar" onclick="cerrar()">
+        <p class="equis">X</p>
+      </div>
+      <h3>Introducción</h3>
+      <ul>
+        <li>Banca, fintech y neobancos en Latam con valuación de +1B USD.</li>
+        <li>
+          <ul>
+            <li>Nubank (Brasil)</li>
+            <li>Ualá (Argentina)</li>
+            <li>Neon (Brasil)</li>
+            <li>C6 Bank (Brasil)</li>
+            <li>Banco Pan (Brasil)</li>
+            <li>Inter (Brasil)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="texto1 hide texto2" id="text2">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <p class="textint">Se refiere a aumentar la eficiencia de los procesos en términos de excelencia operacional, aumentar la eficiencia
+      de los procesos que tenga de fabricación o de entrega del producto o servicio.</p>
+  </div>
+
+  <div class="texto1 hide texto3" id="text3">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <p>El<i> customering engagement</i> y el <i>customer experience</i>.​</p>
+  </div>
+
+  <div class="texto1 hide texto4" id="text4">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <p class="textint"><i>Future work</i>, productividad por trabajador, recordemos que en Estados Unidos las empresas -sobre todo micro- son
+      cuatro veces más productivas que en otras regiones, por ejemplo, Europa y eso es fundamentalmente por el uso de
+      tecnologías, pero también por el uso de otras formas organizacionales en cuanto a equipo y para eficiencia de
+      procesos.</p>
+  </div>
+
+  <div class="texto1 hide texto5" id="text5">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <p class="textint">Estas tendencias permiten plantear y desarrollar nuevas líneas de negocio para mi empresa, que me generen un
+      ingreso recurrente y adicional.</p>
+  </div>
+
+  <div class="texto1 hide texto6" id="text6">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <h3>Nivel 4​</h3>
+    <p class="textint">El cuarto es el nivel realmente interesante, aquí tendríamos que plantearnos para qué departamentos, equipos o
+      qué parte del equipo sería más eficiente si se trabaja una serie de días en la oficina y otra serie de días en
+      casa, cuál es la combinación óptima de todo esto. Pasar al cuarto nivel y de verdad sacar el máximo provecho del
+      teletrabajo.​
+
+      El nuevo reto aquí es pasar a la comunicación asíncrona, es decir, que la mayor parte de las tareas se puedan
+      elegir cuándo hacerlas, a partir de las priorizaciones y los objetivos que tenga nuestra empresa. Si eso lo hace
+      el 80 o el 90 % del personal, eso es un entorno de comunicación asíncrona, donde la máxima cantidad de trabajo se
+      realiza de manera asíncrona.​
+
+      En un entorno distribuido se potencia mucho más las posibilidades de comunicación asíncrona y las bondades del
+      teletrabajo.</p>
+  </div>
+
+  <div class="texto1 hide texto7" id="text7">
+    <div class="cerrar" onclick="cerrar()">
+      <p class="equis">X</p>
+    </div>
+    <h3>Nivel 5​</h3>
+    <p>El quinto nivel es un nivel utópico, es el “nirvana”. Este sería el nivel en el que una empresa con un equipo
+      distribuido trabajaría mejor que cualquier empresa de la historia con un equipo no distribuido y centralizado.</p>
+  </div>
+
+  <!-------------scripts------------------>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
